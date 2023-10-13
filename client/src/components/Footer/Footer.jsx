@@ -30,12 +30,6 @@ const Footer = () => {
             <span >{cate.title}</span>
             </Link>
           ))}
-          {/* <span>JavaScript</span>
-          <span>ReactJS</span>
-          <span>HTML5 AND CSS3</span>
-          <span>SELF DEVELOPMENT BOOKS</span>
-          <span>ENGLISH BOOKS</span>
-          <span>C++ BOOKS</span> */}
         </div>
         <div className="item">
           <h1>Links</h1>

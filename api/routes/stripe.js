@@ -42,10 +42,6 @@ router.post("/create-checkout-session", async (req, res) => {
     },
   });
 
-  // console.log("Customer: ", customer);
-
-  // console.log("DATA: ", cartItemsMetadata);
-
   const line_items = req.body.cartItems.map((item) => {
     return {
       price_data: {
@@ -191,9 +187,6 @@ router.post(
 
             const productId = customer.metadata.productid;
 
-            // console.log("Product: ", product);
-            // console.log("Address: ", address);
-
             try {
               const connection = await db.promise();
               await connection.execute(
@@ -215,13 +208,9 @@ router.post(
                   ordertime,
                 ]
               );
-
-              // console.log("Inserted data into the database:", rows);
             } catch (error) {
               console.error("Error inserting data into the database:", error);
             }
-            // console.log("Customer: ", customer);
-            // console.log("data: ", data);
           })
           .catch((err) => {
             console.log(err.message);

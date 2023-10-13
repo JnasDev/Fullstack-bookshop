@@ -12,12 +12,6 @@ app.use(cors());
 
 app.use("/api/stripe", stripe);
 
-// const corsOptions ={
-//     origin:'http://localhost:3001',
-//     credentials:true,            //access-control-allow-credentials:true
-//     optionSuccessStatus:200
-// }
-
 if (db) {
   console.log("MySQL is started");
 } else {

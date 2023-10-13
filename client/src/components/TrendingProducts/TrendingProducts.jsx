@@ -25,8 +25,6 @@ const TrendingProducts = ({ type }) => {
     FetchData();
   }, []);
 
-  // console.log("Product Data:", product);
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -42,7 +40,6 @@ const TrendingProducts = ({ type }) => {
     },
   };
 
-  // console.log("FeaturedPro: ", product);
   return (
     <div className="trendingProducts">
       <div className="top">

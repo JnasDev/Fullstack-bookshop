@@ -6,7 +6,6 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Cart from "../Cart/Cart";
-import axios from "axios";
 import { MdFavorite } from "react-icons/md";
 
 import { useSelector, useDispatch } from "react-redux";
