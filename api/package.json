@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "nodemon": "^3.0.1",
+    "raw-body": "^2.5.2",
+    "stripe": "^13.6.0",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/nodemon": "^1.19.2"
+  }
+}

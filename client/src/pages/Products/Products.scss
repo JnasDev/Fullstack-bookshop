@@ -1,0 +1,45 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+
+  .left {
+    position: sticky;
+    height: 100%;
+    top: 100px;
+    width: max-content;
+    margin-right: 210px;
+    border: 1px  red;
+    background-color: #fff;
+    border-radius: 10px;
+
+
+    .container__for__padding {
+      margin: 20px 20px;
+    }
+    .filterItem {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+        width: 200px;
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    .catImg {
+      width: 1355px;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+    }
+  }
+}
