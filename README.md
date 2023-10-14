@@ -9,4 +9,3 @@
 * ## For api
     - cd .\api\
     - npm install
-    - npm run server
