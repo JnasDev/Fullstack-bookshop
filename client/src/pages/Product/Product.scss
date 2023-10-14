@@ -40,16 +40,16 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-.sg_first_price {
-  font-size: 20px;
-  font-weight: 600;
-  .sg_price {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2879fe;
-  }
-}
-    
+
+    .sg_first_price {
+      font-size: 20px;
+      font-weight: 600;
+      .sg_price {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2879fe;
+      }
+    }
 
     .price {
       font-size: 30px;
@@ -113,6 +113,15 @@
         color: #2879fe;
         font-size: 14px;
         cursor: pointer;
+
+        .Favorites {
+          color: red;
+        }
+
+        .wishlist {
+          color: red;
+          font-size: 16px;
+        }
       }
     }
 

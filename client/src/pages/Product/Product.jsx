@@ -6,6 +6,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import BalanceIcon from "@mui/icons-material/Balance";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { MdFavorite } from "react-icons/md";
 
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -152,11 +153,8 @@ const Product = () => {
               FavoriteNotify();
             }}
           >
-            <FavoriteBorderIcon />
-            ADD TO WISHLIST
-          </div>
-          <div className="item">
-            <BalanceIcon /> ADD TO COMPARE
+            <MdFavorite size={30} className="Favorites" />
+            <span className="wishlist">ADD TO FAVORITE</span>
           </div>
         </div>
 
