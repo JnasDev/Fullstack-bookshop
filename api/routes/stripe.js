@@ -5,6 +5,7 @@ import db from "../database.js";
 
 config();
 
+// Use your stripe secret key
 const stripe = Stripe(process.env.STRIPE_KEY);
 
 const router = express.Router();
