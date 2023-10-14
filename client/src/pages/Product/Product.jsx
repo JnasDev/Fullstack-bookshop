@@ -57,7 +57,7 @@ const Product = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/product/${paramsProduct}`
+          `https://jonastore-bookshop-d192c04d2b79.herokuapp.com/api/product/${paramsProduct}`
         );
 
         setProduct(res.data);

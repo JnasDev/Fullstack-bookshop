@@ -3,6 +3,9 @@ import db from "./database.js";
 import bodyParser from "body-parser";
 import cors from "cors";
 import stripe from "./routes/stripe.js";
+import { config } from "dotenv";
+
+config();
 
 const app = express();
 
@@ -107,7 +110,7 @@ app.get("/api/products/isTrending/:isTrending", (req, res) => {
   });
 });
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Server is running on port : ${port}`);
 });

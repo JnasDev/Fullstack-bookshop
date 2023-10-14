@@ -13,7 +13,7 @@ const FeaturedProducts = ({ type }) => {
     const FetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/products/isFeatured/1`
+          `https://jonastore-bookshop-d192c04d2b79.herokuapp.com/api/products/isFeatured/1`
         );
 
         setProduct(res.data);

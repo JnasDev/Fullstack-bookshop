@@ -15,7 +15,7 @@ const Products = () => {
     const FetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/products/${catId}`
+          `https://jonastore-bookshop-d192c04d2b79.herokuapp.com/api/products/${catId}`
         );
 
         SetBook(res.data);
@@ -31,7 +31,7 @@ const Products = () => {
     const FetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/categories/${catId}`
+          `https://jonastore-bookshop-d192c04d2b79.herokuapp.com/api/categories/${catId}`
         );
 
         setCategories(res.data);

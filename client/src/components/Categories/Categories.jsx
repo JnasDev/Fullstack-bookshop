@@ -9,7 +9,7 @@ const Categories = () => {
   useEffect(() => {
     const FetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/api/categories");
+        const res = await axios.get("https://jonastore-bookshop-d192c04d2b79.herokuapp.com/api/categories");
 
         setCategories(res.data);
       } catch (error) {
