@@ -5,7 +5,9 @@ import db from "../database.js";
 
 config();
 
-const stripe = Stripe(process.env.STRIPE_KEY);
+const stripe = Stripe(
+  "sk_test_51NVUEHLFltWlQvC8mENd6snQ6Xpm1CofZaN5ONknlMHmYILWOe5ks7il6zfVsOCecvKPV7s0vPDpEgJisXWltktO00YGLq7ly8"
+);
 
 const router = express.Router();
 

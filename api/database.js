@@ -4,10 +4,10 @@ import { config } from "dotenv";
 config();
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DATABASE,
+  host: "lcpbq9az4jklobvq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "h4cwv53ozl32w9w8",
+  password: "regvioujxpnyv7mz",
+  database: "q2nq64i4kdl5aajd",
 });
 
 export default db;
