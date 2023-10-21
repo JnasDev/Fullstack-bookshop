@@ -15,3 +15,7 @@
 * ## For api
     - cd .\api\
     - npm install
+
+* ## Review video
+
+  - https://youtu.be/0vHPQHUox8E?si=629RBIX7P1oV-2j3
