@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import  secureLocalStorage  from  "react-secure-storage";
 
 const initialState = {
-  cart: JSON.parse(localStorage.getItem("Cart")) || [],
-  favorites: JSON.parse(localStorage.getItem("Fav")) || [],
+  cart: JSON.parse(secureLocalStorage.getItem("Cart")) || [],
+  favorites: JSON.parse(secureLocalStorage.getItem("Fav")) || [],
   totalQuantityFav: 0,
   totalQuantity: 0,
   totalPrice: 0,
@@ -22,7 +23,7 @@ const cartSlice = createSlice({
         state.cart.push({ ...action.payload });
       }
 
-      localStorage.setItem("Cart", JSON.stringify(state.cart));
+      secureLocalStorage.setItem("Cart", JSON.stringify(state.cart));
     },
 
     addToFavorites: (state, action) => {
@@ -31,7 +32,7 @@ const cartSlice = createSlice({
 
       if (!existingItem) {
         state.favorites.push({ ...action.payload });
-        localStorage.setItem("Fav", JSON.stringify(state.favorites));
+        secureLocalStorage.setItem("Fav", JSON.stringify(state.favorites));
       }
     },
 
@@ -59,7 +60,7 @@ const cartSlice = createSlice({
     removeItem: (state, action) => {
       state.cart = state.cart.filter((item) => item.id !== action.payload);
 
-      localStorage.setItem("Cart", JSON.stringify(state.cart));
+      secureLocalStorage.setItem("Cart", JSON.stringify(state.cart));
     },
 
     removeFromFavorites: (state, action) => {
@@ -67,7 +68,7 @@ const cartSlice = createSlice({
       state.favorites = state.favorites.filter(
         (item) => item.id !== idToRemove
       );
-      localStorage.setItem("Fav", JSON.stringify(state.favorites));
+      secureLocalStorage.setItem("Fav", JSON.stringify(state.favorites));
     },
 
     resetCart: (state) => {
@@ -75,7 +76,7 @@ const cartSlice = createSlice({
       state.totalPrice = 0;
       state.totalQuantity = 0;
 
-      localStorage.setItem("Cart", JSON.stringify(state.cart));
+      secureLocalStorage.setItem("Cart", JSON.stringify(state.cart));
     },
   },
 });
